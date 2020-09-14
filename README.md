@@ -54,7 +54,7 @@ class AppSnackBar: SnackBar {
 | lengthShort | 2 |
 | infinite | Manual dismiss or swipe SnackBar (left, right, up, down)|
 | custom(CGFloat) | Based on your input |
-|
+
 
 ## Style
 
@@ -66,7 +66,7 @@ class AppSnackBar: SnackBar {
 | style.actionTextColorAlpha | CGFloat | 0.5 |
 | style.actionFont | UIFont | UIFont.systemFont(ofSize: 17) |
 | style.actionTextColor | UIColor | UIColor.red |
-|
+
 
 ## Requirements
 
