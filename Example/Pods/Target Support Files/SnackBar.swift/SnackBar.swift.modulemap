@@ -1,0 +1,6 @@
+framework module SnackBar_swift {
+  umbrella header "SnackBar.swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

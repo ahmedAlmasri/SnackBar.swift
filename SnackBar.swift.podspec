@@ -9,34 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = 'SnackBar.swift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SnackBar.swift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'SnackBar provide brief feedback about an operation through a message at the bottom of the screen.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+     Snackbars provide brief feedback about an operation through a message at the bottom of the screen. Snackbars contain up to two lines of text directly related to the operation performed. They may contain a text action.
+
                        DESC
 
-  s.homepage         = 'https://github.com/ahmed.almasri@ymail.com/SnackBar.swift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/ahmedAlmasri/SnackBar.swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ahmed.almasri@ymail.com' => 'ahmed.almasri@ymail.com' }
-  s.source           = { :git => 'https://github.com/ahmed.almasri@ymail.com/SnackBar.swift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Ahmad Almasri' => 'ahmed.almasri@ymail.com' }
+  s.source           = { :git => 'https://github.com/ahmedAlmasri/SnackBar.swift.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
+  s.swift_version    = '5.0'
 
   s.source_files = 'SnackBar.swift/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SnackBar.swift' => ['SnackBar.swift/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+	s.dependency 'SnapKit'
 end

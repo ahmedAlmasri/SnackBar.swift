@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0EF84D2E295B42D2221B2184 /* Pods_SnackBar_swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54441CFA8921909C1B665E71 /* Pods_SnackBar_swift_Example.framework */; };
+		40935382250F9C5600DAFCBB /* SnackBarDurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40935381250F9C5600DAFCBB /* SnackBarDurationTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* SnackBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* SnackBarTests.swift */; };
 		A4010AEEF2195F94E41DA8C9 /* Pods_SnackBar_swift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64EB1474E1A803140639A7B /* Pods_SnackBar_swift_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +30,12 @@
 
 /* Begin PBXFileReference section */
 		2A0289610FEA2F325A4E87F2 /* Pods-SnackBar.swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.swift_Example.release.xcconfig"; path = "Target Support Files/Pods-SnackBar.swift_Example/Pods-SnackBar.swift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2D7004DE0FF83526BE9FFC0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2D7004DE0FF83526BE9FFC0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3AA76DBFACE8940AE5485F54 /* Pods-SnackBar.swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.swift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SnackBar.swift_Tests/Pods-SnackBar.swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CA9A611374E3D372DA6EF14 /* Pods-SnackBar.swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-SnackBar.swift_Tests/Pods-SnackBar.swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40935381250F9C5600DAFCBB /* SnackBarDurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarDurationTests.swift; sourceTree = "<group>"; };
 		54441CFA8921909C1B665E71 /* Pods_SnackBar_swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnackBar_swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		579C5F81D1A56800C54D1E10 /* SnackBar.swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SnackBar.swift.podspec; path = ../SnackBar.swift.podspec; sourceTree = "<group>"; };
+		579C5F81D1A56800C54D1E10 /* SnackBar.swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SnackBar.swift.podspec; path = ../SnackBar.swift.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SnackBar.swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackBar.swift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +45,10 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SnackBar.swift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnackBar.swift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* SnackBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarTests.swift; sourceTree = "<group>"; };
 		C64EB1474E1A803140639A7B /* Pods_SnackBar_swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnackBar_swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D713031870E006D6992FEB /* Pods-SnackBar.swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.swift_Example.debug.xcconfig"; path = "Target Support Files/Pods-SnackBar.swift_Example/Pods-SnackBar.swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E1E904B91F24F4F6A591B1BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E1E904B91F24F4F6A591B1BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 				3AA76DBFACE8940AE5485F54 /* Pods-SnackBar.swift_Tests.debug.xcconfig */,
 				3CA9A611374E3D372DA6EF14 /* Pods-SnackBar.swift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,7 +128,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* SnackBarTests.swift */,
+				40935381250F9C5600DAFCBB /* SnackBarDurationTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +317,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SnackBar.swift_Example/Pods-SnackBar.swift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnackBar.swift/SnackBar_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnackBar_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -340,7 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				40935382250F9C5600DAFCBB /* SnackBarDurationTests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* SnackBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
