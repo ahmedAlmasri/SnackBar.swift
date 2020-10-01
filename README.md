@@ -75,11 +75,23 @@ class AppSnackBar: SnackBar {
 
 ## Installation
 
+### CocoaPods
+
 SnackBar.swift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SnackBar.swift'
+```
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
+
+To integrate `SnackBar` into your Xcode project using Xcode 11 or newer, specify it in `File > Swift Packages > Add`:
+
+```
+https://github.com/ahmedAlmasri/SnackBar.swift
 ```
 
 ## Author
