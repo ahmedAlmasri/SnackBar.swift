@@ -5,7 +5,7 @@
 //  Created by Ahmad Almasri on 9/11/20.
 //
 
-import Foundation
+import UIKit
 
 extension SnackBar {
 	
