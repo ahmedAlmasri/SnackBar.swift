@@ -5,7 +5,7 @@
 //  Created by Ahmad Almasri on 9/14/20.
 //
 
-import Foundation
+import UIKit
 import SnapKit
 
 extension UIView {
