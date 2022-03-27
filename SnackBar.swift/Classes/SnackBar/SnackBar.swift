@@ -41,6 +41,7 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
 	
 	private lazy var actionButton: UIButton = {
 		let actionButton = UIButton(type: .system)
+		actionButton.setContentCompressionResistancePriority(.required, for: .horizontal)
 		actionButton.setContentHuggingPriority(.required, for: .horizontal)
 		actionButton.setTitleColor(
 			style.actionTextColor
