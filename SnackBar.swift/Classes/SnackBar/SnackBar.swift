@@ -69,7 +69,7 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
         self.style = style
 		super.init(frame: .zero)
 		self.backgroundColor = style.background
-		self.layer.cornerRadius = 5
+        self.layer.cornerRadius = style.cornerRadius
 		setupView()
 		setupSwipe()
 		self.messageLabel.text = message
