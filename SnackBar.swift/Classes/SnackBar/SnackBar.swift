@@ -50,11 +50,7 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
 		actionButton.titleLabel?.font = style.actionFont
 		return actionButton
 	}()
-	
-	open var style: SnackBarStyle {
-		
-		return SnackBarStyle()
-	}
+
     public var message: String {
         didSet {
             messageLabel.text = message
@@ -64,11 +60,13 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
 	private let contextView: UIView
 	private let duration: Duration
 	private var dismissTimer: Timer?
-	
-	required public init(contextView: UIView, message: String, duration: Duration) {
+    private let style: SnackBarStyle
+
+    required public init(contextView: UIView, message: String, duration: Duration, style: SnackBarStyle = SnackBarStyle()) {
 		self.contextView = contextView
 		self.message = message
 		self.duration = duration
+        self.style = style
 		super.init(frame: .zero)
 		self.backgroundColor = style.background
 		self.layer.cornerRadius = 5
@@ -148,9 +146,9 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
 	
 	// MARK: - Public Methods
 	
-	public static func make(in view: UIView, message: String, duration: Duration) -> Self {
+    public static func make(in view: UIView, message: String, duration: Duration, style: SnackBarStyle) -> Self {
 		removeOldViews(form: view)
-		return Self.init(contextView: view, message: message, duration: duration)
+        return Self.init(contextView: view, message: message, duration: duration, style: style)
 	}
 	
 	public func setAction(with title: String, action: (() -> Void)? = nil) -> SnackBarPresentable {
