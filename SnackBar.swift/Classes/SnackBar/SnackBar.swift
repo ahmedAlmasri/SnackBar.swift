@@ -60,13 +60,18 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
 	private let duration: Duration
 	private var dismissTimer: Timer?
 	
-	required public init(contextView: UIView, message: String, duration: Duration) {
+	required public init(
+        contextView: UIView,
+        message: String,
+        duration: Duration,
+        cornerRadius: CGFloat
+    ) {
 		self.contextView = contextView
 		self.message = message
 		self.duration = duration
 		super.init(frame: .zero)
 		self.backgroundColor = style.background
-		self.layer.cornerRadius = 5
+		self.layer.cornerRadius = cornerRadius
 		setupView()
 		setupSwipe()
 		self.messageLabel.text = message
@@ -143,9 +148,14 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
 	
 	// MARK: - Public Methods
 	
-	public static func make(in view: UIView, message: String, duration: Duration) -> Self {
+	public static func make(
+        in view: UIView,
+        message: String,
+        duration: Duration,
+        cornerRadius: CGFloat
+    ) -> Self {
 		removeOldViews(form: view)
-		return Self.init(contextView: view, message: message, duration: duration)
+        return Self.init(contextView: view, message: message, duration: duration, cornerRadius: cornerRadius)
 	}
 	
 	public func setAction(with title: String, action: (() -> Void)? = nil) -> SnackBarPresentable {

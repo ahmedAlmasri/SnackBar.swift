@@ -10,8 +10,8 @@ import UIKit
 extension SnackBar {
 	
 	public enum Duration: Equatable {
-		case lengthLong
-		case lengthShort
+		case long
+		case short
 		case infinite
 		case custom(CGFloat)
 		
@@ -19,10 +19,10 @@ extension SnackBar {
 			
 			switch self {
 			
-			case .lengthLong:
-				return 3.5
-			case .lengthShort:
-				return 2
+			case .long:
+				return 3
+			case .short:
+                return 1.5
 			case .infinite:
 				return -1
 			case .custom(let duration):
