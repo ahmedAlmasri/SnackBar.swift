@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,20 +6,17 @@ import PackageDescription
 let package = Package(
     name: "SnackBar",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v11),
     ],
     products: [
         .library(name: "SnackBar",
                  targets: ["SnackBar"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.0"))
+        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .target(name: "SnackBar",
-                dependencies: ["SnapKit"],
-                path: "SnackBar.swift"),
-    ],
-    swiftLanguageVersions: [.v5]
-
+                dependencies: ["SnapKit"]),
+    ]
 )
