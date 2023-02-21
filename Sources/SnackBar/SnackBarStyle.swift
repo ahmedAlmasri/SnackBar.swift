@@ -14,6 +14,7 @@ public struct SnackBarStyle {
 	public var padding = 5
     public var inViewPadding = 20
     public var cornerRadius: CGFloat = 5
+    public var anchor: CGFloat = 0
 	// Label
 	public var textColor: UIColor = .black
     public var font: UIFont = UIFont.systemFont(ofSize: UIFontMetrics.default.scaledValue(for: 14))
