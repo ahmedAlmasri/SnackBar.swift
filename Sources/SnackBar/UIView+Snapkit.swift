@@ -5,14 +5,12 @@
 //  Created by Ahmad Almasri on 9/14/20.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 extension UIView {
-	
-	func setupSubview(_ subview: UIView, setup: (ConstraintViewDSL) -> Void) {
-		self.addSubview(subview)
-		setup(subview.snp)
-	}
-	
+    func setupSubview(_ subview: UIView, setup: (ConstraintViewDSL) -> Void) {
+        addSubview(subview)
+        setup(subview.snp)
+    }
 }

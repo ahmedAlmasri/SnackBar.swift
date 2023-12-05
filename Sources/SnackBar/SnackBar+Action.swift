@@ -8,21 +8,22 @@
 import UIKit
 
 extension UIButton {
-	struct Trager { static var action :(() -> Void)? }
-    private func actionHandler(action:(() -> Void)? = nil) {
-		if action != nil {
-			Trager.action = action
-			
-		} else {
-			Trager.action?()
-			
-		}
+    enum Trager { static var action: (() -> Void)? }
+    private func actionHandler(action: (() -> Void)? = nil) {
+        if action != nil {
+            Trager.action = action
+
+        } else {
+            Trager.action?()
+        }
     }
+
     @objc private func triggerActionHandler() {
-        self.actionHandler()
+        actionHandler()
     }
+
     func actionHandler(controlEvents control: UIControl.Event, ForAction action: @escaping () -> Void) {
-        self.actionHandler(action: action)
-        self.addTarget(self, action: #selector(triggerActionHandler), for: control)
+        actionHandler(action: action)
+        addTarget(self, action: #selector(triggerActionHandler), for: control)
     }
 }

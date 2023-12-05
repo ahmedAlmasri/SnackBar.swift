@@ -17,10 +17,10 @@ public struct SnackBarStyle {
     public var anchor: CGFloat = 0
 	// Label
 	public var textColor: UIColor = .black
-    public var font: UIFont = UIFont.systemFont(ofSize: UIFontMetrics.default.scaledValue(for: 14))
+    public var font = UIFont.systemFont(ofSize: UIFontMetrics.default.scaledValue(for: 14))
 	var maxNumberOfLines: UInt = 2
 	// Action
 	public var actionTextColorAlpha: CGFloat = 0.5
-	public var actionFont: UIFont = UIFont.systemFont(ofSize: UIFontMetrics.default.scaledValue(for: 17))
+    public var actionFont = UIFont.systemFont(ofSize: UIFontMetrics.default.scaledValue(for: 17))
 	public var actionTextColor: UIColor = .red
 }
