@@ -79,12 +79,16 @@ open class SnackBar: UIView, SnackBarAction, SnackBarPresentable {
         return nil
     }
 
-    private func constraintSuperView(with view: UIView) {
-        view.setupSubview(self) {
+    private func constraintSuperView(with superview: UIView) {
+        superview.setupSubview(self) {
             $0.makeConstraints {
-                $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(200)
-                $0.leading.equalTo(view.safeAreaLayoutGuide).offset(style.padding)
-                $0.trailing.equalTo(view.safeAreaLayoutGuide).offset(-style.padding)
+                if let maxWidth = style.maxWidth {
+                    $0.width.lessThanOrEqualTo(maxWidth)
+                    $0.centerX.equalTo(superview)
+                }
+                $0.bottom.equalTo(superview.safeAreaLayoutGuide).offset(200)
+                $0.leading.greaterThanOrEqualTo(superview.safeAreaLayoutGuide).offset(style.padding)
+                $0.trailing.lessThanOrEqualTo(superview.safeAreaLayoutGuide).offset(-style.padding)
             }
         }
     }
